@@ -1,14 +1,16 @@
 class Mango {
-    constructor(x,y) {
+    constructor(x,y,r) {
       var options = {
           isStatic:true,
           restitution:0,
           friction:1
           
       }
-      this.body = Bodies.rectangle(x, y, 50,50, options);
-      this.width = 50;
-      this.height = 50;
+      this.x=x;
+    this.y=y;
+	this.r=r
+      this.body = Bodies.circle(this.x,this.y,this.r, options);
+      
       
       World.add(world, this.body);
 
@@ -16,10 +18,10 @@ class Mango {
     }
     display(){
       var pos =this.body.position;
-      var angle = this.body.angle;
+      //var angle = this.body.angle;
       push();
       translate(pos.x, pos.y);
-      rotate(angle);
+      //rotate(angle);
       rectMode(CENTER);     
       //fill("red");
       //rect(0, 0, this.width, this.height);
