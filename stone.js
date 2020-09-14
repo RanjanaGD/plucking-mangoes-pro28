@@ -1,6 +1,6 @@
 
 class Stone {
-    constructor(x,y) {
+    constructor(x,y,r) {
       var options = {
           isStatic:false,
           restitution:0,
@@ -8,10 +8,11 @@ class Stone {
           density:1.2
           
       }
-      this.body = Bodies.rectangle(x, y, 50,50, options);
-      this.width = 50;
-      this.height = 50;
-      
+     this.x=x;
+     this.y=y;
+   	 this.r=r
+    this.body = Bodies.circle(this.x,this.y,this.r, options);
+
       World.add(world, this.body);
 
       this.image=loadImage("stone.png");
