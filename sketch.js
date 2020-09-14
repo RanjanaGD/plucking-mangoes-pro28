@@ -30,17 +30,17 @@ function setup() {
 ground=new Ground(550,550,1400,10);
 
 tree1=new Tree(800,55,30,50);
-boy=new Boy(100,400,100,100);
-mango1=new Mango(900,150,20,30);
-mango2=new Mango(900,200,20,30);
-mango3=new Mango(1000,200,20,30);
-mango4=new Mango(1000,90,20,30);
-mango5=new Mango(1100,140,20,30);
-mango6=new Mango(1000,140,20,30);
-mango7=new Mango(1100,200,20,30);
-mango8=new Mango(1050,140,20,30);
-mango9=new Mango(950,100,20,30);
-mango10=new Mango(950,200,20,30);
+boy=new Boy(100,400,100,500);
+mango1=new Mango(900,150,20);
+mango2=new Mango(900,200,20);
+mango3=new Mango(1000,200,20);
+mango4=new Mango(1000,90,20);
+mango5=new Mango(1100,140,20);
+mango6=new Mango(1000,140,20);
+mango7=new Mango(1100,200,20);
+mango8=new Mango(1050,140,20);
+mango9=new Mango(950,100,20);
+mango10=new Mango(950,200,20);
 
 
 
@@ -49,7 +49,7 @@ mango10=new Mango(950,200,20,30);
 
 
 
-stone=new Stone(100,390,50,50);
+stone=new Stone(100,390,50);
 
 slingShot = new Slingshot(stone.body,{x:200,y:400});
 	Engine.run(engine);
